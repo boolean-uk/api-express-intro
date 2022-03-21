@@ -127,7 +127,7 @@ We can add as many routes as we like with express. To add another route that ret
 
 ```javascript
 app.get("/bye", (req, res) => {
-  res.send({msg: 'goodbye!'})
+  res.json({msg: 'goodbye!'})
 })
 ```
 
