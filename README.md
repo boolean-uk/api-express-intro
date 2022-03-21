@@ -106,7 +106,7 @@ The code above:
 3. The callback function accepts 2 arguments, `req` and `res`. These are objects provided to use by express. `req` contains information about the HTTP [request](https://expressjs.com/en/4x/api.html#req) from the client. `res` allows us to send back different [responses](https://expressjs.com/en/4x/api.html#res) to the client.
 4. Our callback uses the response object to send back some text to the client.
 
-We can also send back `json` using the `res.json()` method that express gives us:
+We can also send back `json` using the `res.json()` method that express gives us. Change your first handler to use `res.json`:
 
 ```javascript
 app.get("/", (req, res) => {
