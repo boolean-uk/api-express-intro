@@ -135,7 +135,7 @@ To add handlers for different http methods, we can use `app.delete`, `app.post`,
 
 ```javascript
 app.delete("/bye", (req, res) => {
-  res.send({msg: 'goodbye forever!'})
+  res.json({msg: 'goodbye forever!'})
 })
 ```
 
